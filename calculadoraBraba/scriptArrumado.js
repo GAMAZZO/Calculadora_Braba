@@ -120,8 +120,7 @@ btnOperadores.forEach(botao => {
             executarCalculo();
         }
         
-        
-
+    
         primeiroValor = parseFloat(display.value);
         operadorPendente = operador;
         limpaDisplay = true; // Era 'true'
