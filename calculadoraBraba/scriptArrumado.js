@@ -54,21 +54,34 @@ function executarCalculo(){
     }
 
 
-    if(typeof resultado === 'number' && Number.isInteger(resultado)){
+    if (typeof resultado === 'number' && Number.isInteger(resultado)) {
         display.value = resultado;
         primeiroValor = resultado;
-    }else if(typeof resultado === 'number' && !Number.isInteger(resultado)){
-        display.value = resultado.toFixed(2);
+    } else if (typeof resultado === 'number' && !Number.isInteger(resultado)) {
+        const resultadoString = String(resultado);
+        const indiceDoPonto = resultadoString.indexOf('.');
+
+        if (indiceDoPonto !== -1) {
+            const casasDecimais = resultadoString.length - indiceDoPonto - 1;
+
+            if (casasDecimais > 2) {
+                display.value = resultado;
+            } else {
+                display.value = resultado.toFixed(2);
+            }
+        } else {
+            display.value = resultado;
+        }
+
         primeiroValor = resultado;
-    }else{
+    } else {
         display.value = resultado;
         primeiroValor = null;
     }
 
     operadorPendente = null;
-    limpaDisplay = true; // Era 'true'
+    limpaDisplay = true;
 }
-
 // --- LISTENERS ---
 
 // Listener para Botões Numéricos
@@ -123,7 +136,7 @@ btnOperadores.forEach(botao => {
     
         primeiroValor = parseFloat(display.value);
         operadorPendente = operador;
-        limpaDisplay = true; // Era 'true'
+        limpaDisplay = true;
     });
 });
 
