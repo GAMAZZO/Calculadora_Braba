@@ -1,0 +1,53 @@
+🔹 Nível básico – lógica e DOM
+
+Calculadora simples
+➝ Operações de soma, subtração, multiplicação e divisão.
+(treina funções, eventos e manipulação de inputs)
+
+Relógio digital em tempo real
+➝ Mostra horas/minutos/segundos que se atualizam sozinhos.
+(treina setInterval e Date)
+
+Gerador de frases aleatórias
+➝ Cada clique mostra uma frase motivacional ou engraçada.
+(treina arrays e Math.random)
+
+🔹 Nível intermediário – vetores e manipulação de dados
+
+Lista de tarefas (To-Do List)
+➝ Adicionar, remover e marcar tarefas como concluídas.
+(treina arrays, objetos, eventos e DOM)
+
+Conversor de unidades
+➝ Ex: Celsius ↔ Fahrenheit, km ↔ milhas, etc.
+(treina funções puras e validação de input)
+
+Jogo de adivinhação
+➝ O computador “pensa” em um número aleatório, e o usuário tenta adivinhar.
+(treina condicionais e loops)
+
+🔹 Nível avançado – organização e lógica mais complexa
+
+Tabela de notas de alunos
+➝ Inserir notas e mostrar média, maior e menor nota.
+(treina matrizes, .map(), .reduce() e organização de dados)
+
+Quiz interativo
+➝ Perguntas de múltipla escolha e pontuação final.
+(treina objetos, arrays e lógica condicional)
+
+Sistema simples de cadastro
+➝ Usuário informa nome/idade/email e você exibe uma lista com os cadastros.
+(treina objetos, arrays e DOM)
+
+Mini-jogo estilo Pedra, Papel e Tesoura
+➝ Jogador vs. computador com placar.
+(treina eventos, lógica de jogo e DOM)
+
+👉 A ideia é você ir subindo a dificuldade:
+
+primeiro projetos que manipulam só números e strings,
+
+depois projetos que trabalham com arrays e objetos,
+
+por fim projetos que mexem mais no DOM (inputs, botões, listas).
