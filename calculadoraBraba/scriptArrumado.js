@@ -13,7 +13,7 @@ function dividir(n1, n2) {
 }
 
 // CAPTURA DE ELEMENTOS
-const display = document.getElementById('display');
+const display = document.getElementById('display'); // document Representa todo o arquivo HTML
 const bntNumeros = document.querySelectorAll('.numero');
 const btnOperadores = document.querySelectorAll('.operador');
 const btnLimpar = document.querySelectorAll('.btn-limpar'); 
@@ -96,7 +96,7 @@ function adicionarAoDisplay(valor) {
 }
 
 
-
+// Listener para Botões dos Números
 bntNumeros.forEach(botao => {
     botao.addEventListener('click', () => {
         const valor = botao.getAttribute('data-valor');
